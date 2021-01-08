@@ -1,0 +1,26 @@
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>TodoControl</servlet-name>
+  	<display-name>TodoControl</display-name>
+  	<description></description>
+  	<servlet-class>com.Todolist.web.TodoControl</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>UpdateControl</display-name>
+  	<servlet-name>UpdateControl</servlet-name>
+  	<servlet-class>com.Todolist.web.UpdateControl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>TodoControl</servlet-name>
+  	<url-pattern>/control</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateControl</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+
+</web-app>
